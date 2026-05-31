@@ -250,8 +250,8 @@ CELERY_TIMEZONE = 'Africa/Addis_Ababa'
 # ─────────────────────────────────────────────────────────────────────────────
 GROQ_API_KEY = config('GROQ_API_KEY', default='')
 GROQ_AI_MOCK = config('GROQ_AI_MOCK', default=False, cast=bool)
-GROQ_MODEL = 'llama3-70b-8192'
-GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+GROQ_MODEL = config('GROQ_MODEL', default='groq/compound')
+GROQ_API_URL = config('GROQ_API_URL', default='https://api.groq.com/openai/v1/chat/completions')
 
 
 # ─────────────────────────────────────────────────────────────────────────────
