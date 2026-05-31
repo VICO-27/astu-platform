@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────
+#  ASTU Platform — Backend Dependencies
+#  Install: pip install -r requirements.txt
+# ─────────────────────────────────────────────
+
+# Core Django
+Django==5.0.6
+djangorestframework==3.15.2
+django-cors-headers==4.4.0
+
+# Authentication
+django-allauth==0.63.6
+dj-rest-auth==6.0.0
+djangorestframework-simplejwt==5.3.1
+
+# Database
+psycopg2-binary==2.9.9
+
+# Environment variables
+python-decouple==3.8
+
+# File & media storage
+cloudinary==1.40.0
+django-cloudinary-storage==0.3.0
+
+# Search & filtering
+django-filter==24.2
+
+# Background tasks
+celery==5.4.0
+redis==5.0.8
+django-celery-results==2.5.1
+
+# HTTP requests (for Groq API streaming)
+httpx==0.27.0
+
+# Static files serving in production
+whitenoise==6.7.0
+
+# Utilities
+Pillow==10.4.0
+python-slugify==8.0.4
+django-extensions==3.2.3
+python-magic==0.4.27
+
+# Rate limiting
+django-ratelimit==4.1.0
+
+# Security / CORS
+django-environ==0.11.2
+
+# Dev tools
+ipython==8.26.0
