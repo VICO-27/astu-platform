@@ -67,9 +67,10 @@ def complete_registration(request):
     data = serializer.validated_data
 
     # Update the User record
-    request.user.name             = data['name']
+    if 'name' in data:
+        request.user.name = data['name']
     request.user.profile_complete = True
-    request.user.save(update_fields=['name', 'profile_complete'])
+    request.user.save(update_fields=['name', 'profile_complete'] if 'name' in data else ['profile_complete'])
 
     # Create or update the UserProfile
     profile, _ = UserProfile.objects.get_or_create(user=request.user)

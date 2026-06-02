@@ -65,7 +65,7 @@ class RegistrationCompleteSerializer(serializers.Serializer):
     student_id uniqueness is validated here; existing user is excluded via request context.
     """
     student_id = serializers.CharField(max_length=20)
-    name       = serializers.CharField(max_length=200)
+    name       = serializers.CharField(max_length=200, required=False)
     department = serializers.PrimaryKeyRelatedField(queryset=Department.objects.all())
     year       = serializers.ChoiceField(choices=UserProfile.Year.choices)
     semester   = serializers.ChoiceField(choices=UserProfile.Semester.choices)
