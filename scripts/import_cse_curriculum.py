@@ -13,8 +13,8 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings.development')
 import django
 django.setup()
 
-from apps.courses.models import Course
-from apps.departments.models import Department
+from backend.apps.courses.models import Course
+from backend.apps.departments.models import Department
 
 COURRICULUM_TEXT = """
 ###### First Year First Semester

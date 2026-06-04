@@ -10,12 +10,12 @@ import django
 
 django.setup()
 
-from apps.departments.models import Department
-from apps.courses.models import Course, Chapter
-from apps.users.models import User, UserProfile
-from apps.materials.models import Material
-from apps.announcements.models import Announcement
-from apps.projects.models import Project, ProjectMember, Task, ProjectFile, ProjectMessage, ActivityLog
+from backend.apps.departments.models import Department
+from backend.apps.courses.models import Course, Chapter
+from backend.apps.users.models import User, UserProfile
+from backend.apps.materials.models import Material
+from backend.apps.announcements.models import Announcement
+from backend.apps.projects.models import Project, ProjectMember, Task, ProjectFile, ProjectMessage, ActivityLog
 
 
 def get_or_create_department():

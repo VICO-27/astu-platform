@@ -15,12 +15,12 @@ import django
 django.setup()
 
 from rest_framework_simplejwt.tokens import RefreshToken
-from apps.departments.models import Department
-from apps.courses.models import Course, Chapter
-from apps.materials.models import Material
-from apps.projects.models import Project, Task, ProjectFile, ProjectMember
-from apps.users.models import User
-from apps.announcements.models import Announcement
+from backend.apps.departments.models import Department
+from backend.apps.courses.models import Course, Chapter
+from backend.apps.materials.models import Material
+from backend.apps.projects.models import Project, Task, ProjectFile, ProjectMember
+from backend.apps.users.models import User
+from backend.apps.announcements.models import Announcement
 
 BASE_URL = 'http://127.0.0.1:8000'
 
